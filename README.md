@@ -18,7 +18,7 @@ git clone https://github.com/Berkay-23/FaceRecognitionAndAntiSpoofing.git
 
 2. Navigate to the project directory:
 ```
-cd FaceRecognitionAndAntiSpoofing/faceRec
+cd FaceRecognitionAndAntiSpoofing
 ```
 
 3. Start the application by running the following command:
