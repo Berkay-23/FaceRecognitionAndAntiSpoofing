@@ -1,0 +1,30 @@
+<div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="registerModalLabel">Kayıt Ol</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <img id="photoRegister" src="" alt="IMAGE">
+
+                <hr style="width: 100%; height: 0.2rem; color: #212529; opacity: 1; border-radius: 1rem">
+
+                <div class="form">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Kullanıcı Adı</label>
+                        <input id="username" name="username" type="text" class="form-control"
+                               aria-describedby="usernameHelp">
+                        <div id="usernameHelp" class="form-text">Lütfen Türkçe karakter ve özel simge kullanmayınız.
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button id="btnRegister" type="button" class="btn btn-dark">Kaydol</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

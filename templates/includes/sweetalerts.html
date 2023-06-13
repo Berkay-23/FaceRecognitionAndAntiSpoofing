@@ -1,0 +1,29 @@
+<!-- Begin alerts -->
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, message in messages %}
+            <script>
+
+                let keys = {
+                    'info': 'Bilgilendirme',
+                    'success': 'Başarılı',
+                    'warning': 'Uyarı',
+                    'danger': 'Hata'
+                }
+
+                Swal.fire({
+                    title: `${keys["{{ category }}"]}!`,
+                    text: "{{ message }}",
+                    icon: "{{ category }}" === "danger" ? "error" : "{{ category }}",
+                    timer: 3000,
+                    timerProgressBar: true,
+                    confirmButtonText: "Tamam",
+                    confirmButtonColor: "#3085d6",
+                });
+
+            </script>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+
+<!-- End alerts -->
